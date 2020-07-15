@@ -1,0 +1,24 @@
+From 60198157263bc2e2f7232e2c7ccfb0469377edd7 Mon Sep 17 00:00:00 2001
+From: Cedric Veilleux <veilleux.cedric@gmail.com>
+Date: Tue, 7 Jul 2020 03:01:19 +0000
+Subject: [PATCH] espressobin: Add CONFIG_DEFAULT_DEVICE_TREE to defconfig.
+
+---
+ configs/mvebu_espressobin-88f3720_defconfig | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/configs/mvebu_espressobin-88f3720_defconfig b/configs/mvebu_espressobin-88f3720_defconfig
+index c2b61388fe..9cffa6605c 100644
+--- a/configs/mvebu_espressobin-88f3720_defconfig
++++ b/configs/mvebu_espressobin-88f3720_defconfig
+@@ -3,6 +3,7 @@ CONFIG_ARCH_MVEBU=y
+ CONFIG_SYS_TEXT_BASE=0x00000000
+ CONFIG_SYS_MALLOC_F_LEN=0x2000
+ CONFIG_TARGET_MVEBU_ARMADA_37XX=y
++CONFIG_DEFAULT_DEVICE_TREE="armada-3720-espressobin"
+ CONFIG_DEBUG_UART=y
+ CONFIG_AHCI=y
+ CONFIG_DISTRO_DEFAULTS=y
+-- 
+2.17.1
+

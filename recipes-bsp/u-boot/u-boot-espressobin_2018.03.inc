@@ -1,21 +1,19 @@
 require u-boot-espressobin.inc
 
 LICENSE = "GPLv2+"
-LIC_FILES_CHKSUM = "file://README;md5=089c6275df97d40f52f08aee128a2ad3"
+LIC_FILES_CHKSUM = "file://README;md5=8ff0837b355cf37b6b956f316d010d0c"
 
 FILESEXTRAPATHS_prepend := "${THISDIR}/patches:"
 FILESEXTRAPATHS_prepend_espressobin-v7 := "${THISDIR}/patches-v7:"
 
 SRCREV = "${AUTOREV}"
-SRCBRANCH = "u-boot-2017.03-armada-17.10"
+SRCBRANCH = "u-boot-2018.03-armada-18.12"
 
 SRC_URI_append = "\
     git://github.com/MarvellEmbeddedProcessors/u-boot-marvell.git;protocol=https;branch=${SRCBRANCH} \
-    file://0001-Added-override-directive-to-env-Makefile.patch \
-    file://0002-Change-system_info.h-import-in-global_data.h-to-forc.patch \
-    file://0003-Added-mx25u3235f-SPI-flash-ID-to-spi_flash_ids.c.patch \
+    file://0001-espressobin-Add-CONFIG_DEFAULT_DEVICE_TREE-to-defcon.patch \
+    file://0005-fw_env_main.c-Fix-incorrect-size-for-malloc-ed-strin.patch \
     file://0004-DTS-espressobin-add-emmc-device-support.patch \
-    file://0005-Swapped-sdhci0-and-sdhci1-to-reflect-linux-device-tr.patch \
 "
 
 SRC_URI_append_espressobin-v7 = "\
