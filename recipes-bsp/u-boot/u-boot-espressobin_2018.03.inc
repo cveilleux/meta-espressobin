@@ -14,12 +14,14 @@ SRC_URI_append = "\
     file://0001-espressobin-Add-CONFIG_DEFAULT_DEVICE_TREE-to-defcon.patch \
     file://0005-fw_env_main.c-Fix-incorrect-size-for-malloc-ed-strin.patch \
     file://0004-DTS-espressobin-add-emmc-device-support.patch \
+    file://0006-espressobin-dts-Swap-emmc-and-sd-card-to-match-linux.patch \
 "
 
-SRC_URI_append_espressobin-v7 = "\
-    file://0001-git-add-some-temporary-files-into-git-ignore-list.patch \
-    file://0002-mtd-add-issi-is25wp032d-spi-flash-support.patch \
-    file://0003-mtd-add-gigadevice-gd25lq32d-spi-flash-support.patch \
-"
+# TODO
+#SRC_URI_append_espressobin-v7 = "\
+#    file://0001-git-add-some-temporary-files-into-git-ignore-list.patch \
+#    file://0002-mtd-add-issi-is25wp032d-spi-flash-support.patch \
+#    file://0003-mtd-add-gigadevice-gd25lq32d-spi-flash-support.patch \
+#"
 
 S = "${WORKDIR}/git"
