@@ -13,7 +13,6 @@ SRC_URI_append = "\
     git://github.com/MarvellEmbeddedProcessors/u-boot-marvell.git;protocol=https;branch=${SRCBRANCH} \
     file://0001-espressobin-Add-CONFIG_DEFAULT_DEVICE_TREE-to-defcon.patch \
     file://0005-fw_env_main.c-Fix-incorrect-size-for-malloc-ed-strin.patch \
-    file://0004-DTS-espressobin-add-emmc-device-support.patch \
     file://0006-espressobin-dts-Swap-emmc-and-sd-card-to-match-linux.patch \
 "
 
