@@ -6,7 +6,7 @@ LIC_FILES_CHKSUM = "file://README;md5=8ff0837b355cf37b6b956f316d010d0c"
 FILESEXTRAPATHS_prepend := "${THISDIR}/patches:"
 FILESEXTRAPATHS_prepend_espressobin-v7 := "${THISDIR}/patches-v7:"
 
-SRCREV = "${AUTOREV}"
+SRCREV = "c9aa92ce70d16b3d6c6291c6be69f42783a4ebc0"
 SRCBRANCH = "u-boot-2018.03-armada-18.12"
 
 SRC_URI_append = "\
